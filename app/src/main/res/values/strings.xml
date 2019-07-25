@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">base-kotlin</string>
+    <string name="title_activity_phone_book">PhoneBookActivity</string>
+
+    <!-- Error Dialog -->
+    <string name="error_dialog_tv_title">Ops!</string>
+    <string name="error_dialog_btn_positive_button">OK</string>
+    <!-- Error Dialog -->
+
+    <!-- Success Dialog -->
+    <string name="success_dialog_tv_title">Sucesso!</string>
+    <string name="success_dialog_btn_positive_button">OK</string>
+    <string name="success_dialog_tv_positive_description">Cadastro realizado com sucesso!</string>
+    <!-- Success Dialog -->
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_tv_title">Atenção</string>
+    <string name="alert_dialog_btn_positive_button">OK</string>
+    <string name="alert_dialog_tv_positive_description">Cadastro realizado com sucesso!</string>
+    <!-- Alert Dialog -->
 </resources>
