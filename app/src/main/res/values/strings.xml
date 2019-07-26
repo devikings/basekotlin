@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">base-kotlin</string>
+    <string name="app_name">Meus Contatos</string>
+    <string name="title_activity_phone_book">Meus Contatos</string>
+    <string name="title_activity_add_contact">Novo Contato</string>
+
+    <!-- Error Dialog -->
+    <string name="error_dialog_tv_title">Ops!</string>
+    <string name="error_dialog_tv_desc">Tente novamente!</string>
+    <string name="error_dialog_btn_positive_button">OK</string>
+    <!-- Error Dialog -->
+
+    <!-- Success Dialog -->
+    <string name="success_dialog_tv_title">Sucesso!</string>
+    <string name="success_dialog_btn_positive_button">OK</string>
+    <string name="success_dialog_tv_positive_description">Cadastro realizado com sucesso!</string>
+    <!-- Success Dialog -->
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_tv_title">Atenção</string>
+    <string name="alert_dialog_btn_positive_button">OK</string>
+    <string name="alert_dialog_tv_positive_description">Cadastro realizado com sucesso!</string>
+    <!-- Alert Dialog -->
+
+    <!-- Add Contact -->
+    <string name="add_contact_tv_name">Nome:</string>
+    <string name="add_contact_tv_phone">Telefone:</string>
+    <string name="add_contact_btn_save">Salvar</string>
+    <!-- Add Contact -->
+
+    <!-- Phone Book -->
+    <string name="phone_book_tv_total">Total %d</string>
+    <!-- Phone Book -->
 </resources>

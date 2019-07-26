@@ -3,4 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="lineSeparator">#E0F0CF</color>
+    <color name="semiDarkerBackground">#EDEBEB</color>
+    <color name="darkerBackground">#A4A5A5</color>
+
+    <color name="s1">#EEEEEE</color>
+
 </resources>
