@@ -12,11 +12,13 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute">
+        <activity android:name=".ui.addcontact.AddContactActivity"
+                  android:label="@string/title_activity_phone_book"
+                  android:theme="@style/AppTheme.NoActionBar"/>
         <activity
                 android:name=".ui.phonebook.PhoneBookActivity"
                 android:label="@string/title_activity_phone_book"
-                android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+                android:theme="@style/AppTheme.NoActionBar"/>
         <activity
                 android:name=".ui.splash.SplashActivity"
                 android:theme="@style/AppTheme.SplashScreen">
@@ -27,4 +29,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

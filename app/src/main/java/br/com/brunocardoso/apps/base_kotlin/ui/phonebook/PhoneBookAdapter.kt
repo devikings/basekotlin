@@ -7,41 +7,40 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import br.com.brunocardoso.apps.base_kotlin.R
-import br.com.brunocardoso.apps.base_kotlin.shared.model.Phone
+import br.com.brunocardoso.apps.base_kotlin.shared.model.Contact
 import br.com.brunocardoso.apps.base_kotlin.ui.phonebook.PhoneBookAdapter.PhoneBookViewHolder
 
 /**
  * @author Bruno Cardoso on 24/07/2019.
  */
 class PhoneBookAdapter(
-    private var list: List<Phone>
+    private var list: List<Contact>
 ) : Adapter<PhoneBookViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhoneBookViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(
-            R.layout.recyclerview_item, parent
-            , false
-        )
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.contact_item, parent, false)
         return PhoneBookViewHolder(view)
     }
 
     override fun getItemCount(): Int = list.size
 
     override fun onBindViewHolder(holder: PhoneBookViewHolder, position: Int) {
-        val phone = list.get(position)
-        holder.bind(phone)
+        val contact = list.get(position)
+        holder.bind(contact)
     }
 
-    fun setList(list: List<Phone>) {
+    fun setList(list: List<Contact>) {
         this.list = list
         notifyDataSetChanged()
     }
 
     class PhoneBookViewHolder(itemView: View) : ViewHolder(itemView) {
-        private val tvWord: TextView = itemView.findViewById<TextView>(R.id.textView)
+        private val tvName: TextView = itemView.findViewById(R.id.contact_item_name)
+        private val tvPhone: TextView = itemView.findViewById(R.id.contact_item_phone)
 
-        fun bind(phone: Phone) {
-            tvWord.text = phone.name
+        fun bind(contact: Contact) {
+            tvName.text = contact.name
+            tvPhone.text = contact.phone
         }
     }
 }

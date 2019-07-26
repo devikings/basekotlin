@@ -1,9 +1,9 @@
 package br.com.brunocardoso.apps.base_kotlin.shared.repository
 
 import android.app.Application
-import br.com.brunocardoso.apps.base_kotlin.shared.dao.PhoneDao
+import br.com.brunocardoso.apps.base_kotlin.shared.dao.ContactDao
 import br.com.brunocardoso.apps.base_kotlin.shared.database.UserRoomDatabase
-import br.com.brunocardoso.apps.base_kotlin.shared.model.Phone
+import br.com.brunocardoso.apps.base_kotlin.shared.model.Contact
 import io.reactivex.Completable
 import io.reactivex.Single
 
@@ -12,9 +12,9 @@ import io.reactivex.Single
  */
 class PhoneBookRepository(
     application: Application,
-    private val dao: PhoneDao = UserRoomDatabase.getDatabase(application).phoneDao()
+    private val dao: ContactDao = UserRoomDatabase.getDatabase(application).ContactDao()
 ) {
-    fun save(phone: Phone): Completable = dao.insert(phone)
-    fun delete(phone: Phone): Completable = dao.delete(phone)
-    fun getPhones(): Single<List<Phone>> = dao.fetchAll()
+    fun save(contact: Contact): Completable = dao.insert(contact)
+    fun delete(contact: Contact): Completable = dao.delete(contact)
+    fun getcontacts(): Single<List<Contact>> = dao.fetchAll()
 }

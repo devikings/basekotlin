@@ -7,13 +7,12 @@ import androidx.room.PrimaryKey
 /**
  * @author Bruno Cardoso on 24/07/2019.
  */
-
-@Entity(tableName = "Phone")
-open class Phone(
+@Entity(tableName = "Contact")
+open class Contact(
     @ColumnInfo(name = "nome") val name: String = "",
     @ColumnInfo(name = "phone") val phone: String = ""
 ) {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    var id: String = ""
+    var id: Int? = null
 }

@@ -4,18 +4,15 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import br.com.brunocardoso.apps.base_kotlin.shared.dao.PhoneDao
-import br.com.brunocardoso.apps.base_kotlin.shared.dao.UserDao
-import br.com.brunocardoso.apps.base_kotlin.shared.model.Phone
-import br.com.brunocardoso.apps.base_kotlin.shared.model.User
+import br.com.brunocardoso.apps.base_kotlin.shared.dao.ContactDao
+import br.com.brunocardoso.apps.base_kotlin.shared.model.Contact
 
 /**
  * @author Bruno Cardoso on 23/07/2019.
  */
-@Database(entities = [User::class, Phone::class], version = 3)
+@Database(entities = [Contact::class], version = 7)
 abstract class UserRoomDatabase : RoomDatabase() {
-    abstract fun userDao(): UserDao
-    abstract fun phoneDao(): PhoneDao
+    abstract fun ContactDao(): ContactDao
 
     companion object {
         @Volatile
@@ -32,7 +29,7 @@ abstract class UserRoomDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     UserRoomDatabase::class.java,
-                    "User_database"
+                    "contact_database"
                 )
                     .fallbackToDestructiveMigration()
                     .build()

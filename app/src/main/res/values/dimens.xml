@@ -29,4 +29,9 @@
     <!-- Loading Dialog -->
     <dimen name="dialog_loading">100dp</dimen>
     <!-- Loading Dialog -->
+
+    <!-- Dimens Default -->
+    <dimen name="cardview_elevation">4dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <!-- Dimens Default -->
 </resources>
